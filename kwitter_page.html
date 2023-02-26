@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Chat App</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color: skyblue;">
+    <center>
+        <h1>Let's Chat App &nbsp;<img id="logo" src="chat app logo.png" style="border-radius: 10px;"></h1>
+    </center>
+    <button id="logout" onclick="logout()" class="btn btn-primary">Logout</button>
+    <center>
+        <div id ="chat">
+        </div>
+        <br>
+        <br>
+        <br>
+        <label>Send your message here: </label>
+        <br>
+        <input placeholder = "Message: " id = "message" class = "form-control" style = "width: 20%">
+        <br>
+        <button onclick = "send()" class = "btn btn-primary" style = "margin-top: 50px;" style = "width: 120px;" style = "height: 60px;" style = "font-size: 20px;">Send: </button>
+        <br>
+    </center>
+
+
+    <script src="kwitter_room.js"></script>
+
+</body>
+
+</html>

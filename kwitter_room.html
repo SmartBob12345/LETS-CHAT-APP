@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Let's Chat App</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color: skyblue;">
+    <center>
+        <h1>Let's Chat App &nbsp;<img id="logo" src="chat app logo.png" style="border-radius: 10px;"></h1>
+    </center>
+    <button id="logout" onclick="logout()" class="btn btn-primary">Logout</button>
+    <center>
+        <br>
+        <h2 id="username_label"></h2>
+        <br>
+        <input class="form-control" placeholder="Enter your room name: " id="room_name" style="width: 30%;">
+        <br>
+        <button id="addroom" class="btn btn-primary add_room" onclick="addroom()">Add Room</button>
+        <br>
+        <div id = "output">
+
+        </div>
+
+    </center>
+    <script src="kwitter_room.js"></script>
+</body>
+
+</html>
